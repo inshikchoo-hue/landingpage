@@ -1,0 +1,145 @@
+@import url("./reset.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* common */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* header */
+nav {
+    width: 100%;
+    max-width: 1100px;
+    background-color: #fff;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: visible;
+}
+
+.gnb-menu {
+    display: flex;
+    gap: 70px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-size: 22px;
+}
+
+.link-menu ul {
+    display: flex;
+    gap: 10px;
+}
+
+/* kv-sec */
+.kv-sec {
+    width: 100%;
+    height: 472px;
+    background-image: url("../images/bg_mainbanner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+.visual-wrap {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+}
+
+.visual-right.text {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* price-plan-sec */
+.price-plan-sec {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.banner-column {
+    display: flex;
+    gap: 2%;
+}
+
+.left-banner {
+    width: 66%;
+    height: 306px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9E9E9;
+    border-radius: 30px;
+    column-gap: 20px;
+}
+
+.left-text {
+    text-align: center;
+}
+
+.left-text.box {
+    font-size: 20px;
+    color: #404040;
+    border: 1px solid black;
+    padding: 6px 20px;
+    background-color: #fff;
+    margin-bottom: 14px;
+}
+
+.left-text.text-1 {
+    font-size: 27px;
+    margin-bottom: 2px;
+}
+
+.left-text span {
+    font-weight: 600;
+}
+
+.left-text h2 {
+    font-size: 46px;
+    font-weight: 600;
+}
+
+.right-banner {
+    width: 32%;
+    height: 306px;
+    background-color: #FFD422;
+    border-radius: 30px;
+}
+
+.right-text.box {
+    width: 120px;
+    font-size: 15px;
+    color: #404040;
+    border-radius: 30px;
+    padding: 6px;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 14px;
+}
+
+.right-text.text-1 {
+    font-size: 26px;
+    margin-bottom: 2px;
+}
+
+.right-text h2 {
+    font-size: 40x;
+    font-weight: 600;
+}
