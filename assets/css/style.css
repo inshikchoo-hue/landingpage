@@ -90,11 +90,11 @@ nav ul a {
 
 .banner-column {
     display: flex;
-    gap: 2%;
+    gap: 1.5%;
 }
 
 .left-banner {
-    width: 66%;
+    width: 65%;
     height: 306px;
     display: flex;
     justify-content: center;
@@ -109,10 +109,11 @@ nav ul a {
 }
 
 .left-text.box {
+    /* width: 400px; */
     font-size: 20px;
     color: #404040;
-    border: 1px solid black;
-    padding: 6px 20px;
+    border: 1px solid #4A4A4A;
+    padding: 6px;
     background-color: #fff;
     margin-bottom: 14px;
 }
@@ -120,6 +121,8 @@ nav ul a {
 .left-text.text-1 {
     font-size: 27px;
     margin-bottom: 2px;
+    letter-spacing: -1px;
+    color: #333333;
 }
 
 .left-text span {
@@ -128,52 +131,59 @@ nav ul a {
 
 .left-text h2 {
     font-size: 46px;
-    font-weight: 600;
+    font-weight: 800;
+    letter-spacing: -2px;
+    color: #333333;
 }
 
 .right-banner {
-    width: 32%;
+    width: 33.5%;
     height: 306px;
     background-color: #FFD422;
     border-radius: 30px;
     position: relative;
+    margin-bottom: 60px;
 }
 
 .right-text-group {
     width: 100%;
-    padding: 40px;
+    padding: 40px 36px;
 }
 
 .right-text.box {
-    width: 120px;
+    width: 100px;
     font-size: 15px;
     font-weight: 700;
     color: #404040;
     border-radius: 30px;
     text-align: center;
-    padding: 6px;
+    padding: 6px 2px;
+    letter-spacing: -2px;
     background-color: #fff;
-    margin-bottom: 14px;
+    margin-bottom: 8px;
 }
 
 .right-text.text-1 {
     font-size: 26px;
     letter-spacing: 3px;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     color: #fff;
 }
 
 .right-text h2 {
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: -3px;
+    margin-bottom: 20px;
+    color: #333333;
 }
 
 .right-text.desc {
     width: 36%;
     font-size: 20px;
     letter-spacing: -2px;
-    line-height: 24px;
+    line-height: 25px;
+    color: #fff;
 }
 
 .right-text.desc span {
@@ -182,8 +192,101 @@ nav ul a {
 
 .qr-code {
     position: absolute;
-    bottom: -18px;
+    bottom: -16px;
     right: -28px;
+}
+
+.title-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    gap: 8px;
+    color: #333333;
+}
+
+.indicator {
+    display: flex;
+    gap: 8px;
+}
+
+.price-container {
+    width: 100%;
+    display: flex;
+    gap: 2%;
+}
+
+.price-box {
+    width: 49%;
+    border: 1px solid #C7C7C7;
+    border-radius: 30px;
+    padding: 46px 40px;
+}
+
+.price-title {
+    display: flex;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    color: #333333;
+    gap: 4px;
+    margin-bottom: 20px;
+}
+
+.text-row-1 {
+    font-size: 26px;
+    letter-spacing: -2px;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.text-row-1 span {
+    color: #FF2A2A;
+    font-weight: 600;
+}
+
+.text-row-2 {
+    font-size: 16px;
+    color: #8E8E8E;
+    margin-bottom: 12px;
+}
+
+.text-row-3 {
+    display: flex;
+    gap: 20px;
+}
+
+.text-row-3 > .text-1, .text-2 {
+    display: flex;
+    gap: 6px;
+    color: #8E8E8E;
+    margin-bottom: 14px;
+}
+
+.text-row-3 span {
+    color: #333333;
+}
+
+.text-row-4 {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    /* align-items: end; */
+}
+
+.text-row-4 > .text-1 {
+    display: flex;
+    gap: 10px;
+    color: #8E8E8E;
+    /* margin-top: 14px; */
 }
 
 @media(max-width: 1024px) {
