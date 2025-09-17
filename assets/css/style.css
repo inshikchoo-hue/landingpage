@@ -6,10 +6,11 @@
 }
 
 /* common */
+
 .container {
     width: 100%;
     margin: 0 auto;
-    box-sizing: border-box;
+
 }
 
 /* header */
@@ -22,10 +23,17 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    overflow: visible;
+    position: relative;
+
 }
 
-.gnb-menu {
+.gnb {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.menu {
     display: flex;
     gap: 70px;
 }
@@ -41,6 +49,11 @@ nav ul a {
     gap: 10px;
 }
 
+.hamburger-btn,
+.close-btn {
+    display: none;
+}
+
 /* kv-sec */
 .kv-sec {
     width: 100%;
@@ -54,6 +67,8 @@ nav ul a {
 
 .visual-wrap {
     height: 100%;
+    width: 100%;
+    min-width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,25 +136,131 @@ nav ul a {
     height: 306px;
     background-color: #FFD422;
     border-radius: 30px;
+    position: relative;
+}
+
+.right-text-group {
+    width: 100%;
+    padding: 40px;
 }
 
 .right-text.box {
     width: 120px;
     font-size: 15px;
+    font-weight: 700;
     color: #404040;
     border-radius: 30px;
-    padding: 6px;
     text-align: center;
+    padding: 6px;
     background-color: #fff;
     margin-bottom: 14px;
 }
 
 .right-text.text-1 {
     font-size: 26px;
+    letter-spacing: 3px;
     margin-bottom: 2px;
+    color: #fff;
 }
 
 .right-text h2 {
-    font-size: 40x;
+    font-size: 40px;
     font-weight: 600;
+    letter-spacing: -3px;
+}
+
+.right-text.desc {
+    width: 36%;
+    font-size: 20px;
+    letter-spacing: -2px;
+    line-height: 24px;
+}
+
+.right-text.desc span {
+    font-weight: 700;
+}
+
+.qr-code {
+    position: absolute;
+    bottom: -18px;
+    right: -28px;
+}
+
+@media(max-width: 1024px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    /* header */
+    .nav {
+        height: 50px;
+    }
+
+    .hamburger-btn {
+        display: block;
+    }
+
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+
+    .gnb {
+        flex-direction: column;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 90%;
+        height: 100vh;
+        background-color: #fff;
+        border: 1px solid black;
+        /* display: none; */
+        transition: right 0.3s ease;
+        padding: 50px 20px;
+        z-index: 100;
+    }
+
+    .gnb.on {
+        /* display: block; */
+        right: 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 50px;
+    }
+
+    .link-menu {
+        position: absolute;
+        top: 500px;
+        left: 50px;
+    }
+
+    /* kv-sec */
+    .kv-sec {
+        height: 100%;
+        padding: 100px;
+    }
+
+    .visual-wrap {
+        flex-wrap: wrap;
+    }
+
+    .visual-left {
+        margin-bottom: 50px;
+    }
+
+    /* price-plan-sec */
+    .price-plan-sec {
+        width: 94%;
+    }
 }
