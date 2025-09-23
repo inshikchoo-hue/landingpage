@@ -756,22 +756,120 @@ nav ul a {
         margin-bottom: 50px;
     }
 
+    /* price-plan-sec */
+    .price-plan-sec {
+        width: 94%;
+    }
+
+
     .banner-column {
         flex-wrap: wrap;
+        row-gap: 30px;
     }
 
     .left-banner {
         width: 100%;
-        margin-bottom: 30px;
         padding: 30px 60px;
+    }
+
+    .left-text.box {
+        font-size: 24px;
+    }
+
+    .left-text.text-1 {
+        font-size: 30px;
+        letter-spacing: -1px;
+        margin-bottom: 6px;
+    }
+
+    .left-text h2 {
+        font-size: 52px;
+        letter-spacing: -3px;
+    }
+
+    .truck {
+        margin-left: 20px;
     }
 
     .right-banner {
         width: 100%;
+        padding: 10px 110px;
+        position: relative;
     }
 
-    /* price-plan-sec */
-    .price-plan-sec {
-        width: 94%;
+    .right-text.box {
+        font-size: 20px;
+        width: 160px;
+    }
+
+    .right-text.text-1 {
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+
+    .right-text h2 {
+        font-size: 48px;
+    }
+
+    .right-text.desc {
+        width: 57%;
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .qr-code {
+        width: 30%;
+        position: absolute;
+        right: 120px;
+        bottom: 40px;
+    }
+
+    /* price-container */
+    .price-wrap {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .price-box {
+        width: 100%;
+    }
+
+    .price-title h3 {
+        font-size: 36px;
+    }
+
+    .price-title img {
+        width: 50px;
+        margin-right: 6px;
+    }
+
+    .text-row-1 {
+        font-size: 30px;
+        margin-bottom: 14px;
+    }
+
+    .text-row-1 img {
+        transform: scale(110%);
+    }
+
+    .text-row-2, .text-row-3, .text-row-4, .text-row-5 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .coopon {
+        scale: 120%;
+    }
+
+    .text-row-3 img, .text-row-5 img {
+        scale: 110%;
+    }
+
+    .text-row-5 .text-2 {
+        font-size: 16px;
+    }
+
+    .text-row-5 .text-2 span {
+        font-size: 36px;
     }
 }
