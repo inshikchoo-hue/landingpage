@@ -7,9 +7,14 @@
 
 /* common */
 
+/* body {
+    box-sizing: border-box;
+} */
+
 .container {
     width: 100%;
     margin: 0 auto;
+
 }
 
 .title-group {
@@ -90,7 +95,7 @@ nav ul a {
 .visual-wrap {
     height: 100%;
     max-width: 1100px;
-    min-width: 400px;
+    min-width: 500px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -129,13 +134,10 @@ nav ul a {
 }
 
 .banner-column {
+    max-width: 1100px;
     display: flex;
+    flex-wrap: wrap;
     gap: 1.5%;
-}
-
-.price-container {
-    /* width: 100%; */
-    /* height: 100%; */
 }
 
 .price-wrap {
@@ -161,7 +163,6 @@ nav ul a {
 }
 
 .left-text.box {
-    /* width: 400px; */
     font-size: 20px;
     color: #404040;
     border: 2px solid #888888;
@@ -263,8 +264,6 @@ nav ul a {
     padding: 46px 40px 30px;
     letter-spacing: -1px;
 }
-
-.price-text-1 {}
 
 .price-title {
     display: flex;
@@ -403,33 +402,36 @@ nav ul a {
     padding: 20px;
 }
 
-.partnership-sec .box-row {
-    width: 1100px;
-    height: 220px;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 30px;
-    margin-bottom: 14px;
-}
-
-.partnership-sec .box-row img {
-    margin-right: 40px;
-}
-
 .partnership-sec .text-group {
     padding: 0 80px;
 }
 
-.partnership-sec .box-row p {
+.box-row {
+    width: 1100px;
+    height: 220px;
+    background-color: #fff;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    border-radius: 30px;
+    margin-bottom: 14px;
+    position: relative;
+}
+
+.box-row img {
+    position: absolute;
+    right: 64px;
+}
+
+
+.box-row p {
     font-size: 22px;
     letter-spacing: -2px;
     color: #8E8E8E;
     margin-bottom: 10px;
 }
 
-.partnership-sec .box-row h3 {
+.box-row h3 {
     font-size: 36px;
     font-weight: 700;
     letter-spacing: -3px;
@@ -438,12 +440,13 @@ nav ul a {
 
 /* review-sec */
 .review-sec {
-    max-width: 1100px;
+    width: 1100px;
     margin: 0 auto;
 }
 
 .review-column-3 {
     height: 470px;
+    width: 100%;
     display: flex;
     gap: 2%;
     margin-bottom: 40px;
@@ -452,6 +455,7 @@ nav ul a {
 .review-box {
     border: 1px solid #C7C7C7;
     border-radius: 20px;
+    width: 32%;
 }
 
 .review-item {
@@ -468,7 +472,7 @@ nav ul a {
 }
 
 .review-img {
-    width: 290px;
+    width: 100%;
     height: 250px;
     border-radius: 6px;
     margin-bottom: 11px;
@@ -499,7 +503,8 @@ nav ul a {
 }
 
 .banner {
-    max-width: 1100px;
+    margin: 0 auto;
+    width: 1100px;
     height: 203px;
     background-color: #E9E9E9;
     border-radius: 20px;
@@ -564,7 +569,7 @@ nav ul a {
 }
 
 .counseling-wrap {
-    max-width: 1100px;
+    width: 1100px;
     height: 100%;
     margin: 0 auto;
     color: #fff;
@@ -674,6 +679,7 @@ nav ul a {
 }
 
 @media(max-width: 1024px) {
+
     * {
         box-sizing: border-box;
     }
@@ -708,29 +714,32 @@ nav ul a {
         height: 100vh;
         background-color: #fff;
         border: 1px solid black;
-        /* display: none; */
         transition: right 0.3s ease;
         padding: 50px 20px;
         z-index: 100;
     }
 
     .gnb.on {
-        /* display: block; */
         right: 0;
     }
 
     .menu {
         flex-direction: column;
         position: absolute;
-        top: 100px;
-        left: 50px;
+        top: 160px;
+        left: 120px;
+    }
+
+    .menu a {
+        font-size: 36px;
     }
 
     .link-menu {
         position: absolute;
-        top: 500px;
-        left: 50px;
+        top: 600px;
+        left: 120px;
     }
+
 
     /* kv-sec */
     .kv-sec {
@@ -743,7 +752,22 @@ nav ul a {
     }
 
     .visual-left {
+        width: 100%;
         margin-bottom: 50px;
+    }
+
+    .banner-column {
+        flex-wrap: wrap;
+    }
+
+    .left-banner {
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 30px 60px;
+    }
+
+    .right-banner {
+        width: 100%;
     }
 
     /* price-plan-sec */
