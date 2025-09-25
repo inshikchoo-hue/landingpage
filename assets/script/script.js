@@ -10,7 +10,7 @@ closeBtn.addEventListener("click", function () {
 });
 
 // Initialize Swiper
-let swiper = new Swiper(".price-container", {
+var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
@@ -18,9 +18,12 @@ let swiper = new Swiper(".price-container", {
         disableOnInteraction: false,
     },
     pagination: {
-        el: ".indicator",
+        el: ".swiper-pagination",
         clickable: true,
     },
-
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 });
 
