@@ -9,21 +9,20 @@ closeBtn.addEventListener("click", function () {
     menu.classList.remove("on");
 });
 
-// Initialize Swiper
-// let swiper = new Swiper(".mySwiper", {
-//     spaceBetween: 30,
-//     centeredSlides: true,
-//     autoplay: {
-//         delay: 1000,
-//         disableOnInteraction: false,
-//     },
-//     pagination: {
-//         el: ".swiper-pagination",
-//         clickable: true,
-//     },
-//     navigation: {
-//         nextEl: ".swiper-button-next",
-//         prevEl: ".swiper-button-prev",
-//     },
-// });
+
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 'auto',
+    slidesPerGroup: 2,
+    spaceBetween: 26,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+});
 

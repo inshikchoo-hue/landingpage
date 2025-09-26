@@ -41,7 +41,7 @@ body {
     color: #333333;
 }
 
-.indicator {
+.swiper-pagination {
     display: flex;
     gap: 0.5em;
 }
@@ -258,53 +258,27 @@ nav ul a {
     transform: translate(95%, 98%);
 }
 
-
-.swiper {
-    background: #000;
-    font-size: 14px;
-    color: #fff;
-    margin: 0 auto;
-    padding: 0;
-    width: 40%;
-    height: 100%;
+/* slide price-sec */
+.slide-container {
+    width: 100%;
+    /* overflow: hidden; */
 }
 
-.swiper-wrapper {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: #DB053B;
-}
-
-.swiper-slide {
-    display: block;
-    width: 100%;
-    height: 300px;
-    /* display: flex; */
-    font-size: 18px;
-}
-
-/* .swiper-slide {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
-
-.price-container {
+.slide-wrap {
     width: 100%;
     display: flex;
     gap: 2%;
 }
 
-.price-box {
-    width: 49%;
+.slide {
+    width: 48.5%;
     border: 0.063em solid #C7C7C7;
     border-radius: 1.875em;
     padding: 2.875em 2.5em 1.875em;
     letter-spacing: -0.063em;
+    box-sizing: border-box;
 }
+
 
 .price-title {
     display: flex;
@@ -312,13 +286,13 @@ nav ul a {
     font-weight: 700;
     color: #333333;
     gap: 0.25em;
-    margin-bottom: 1.25em;
+    margin-bottom: 0.7em;
 }
 
 .text-row-1 {
     font-size: 1.625em;
     color: #333333;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.25em;
 }
 
 .text-row-1 span {
@@ -404,7 +378,7 @@ nav ul a {
 }
 
 .text-row-5 .text-2 span {
-    font-size: 1.625em;
+    font-size: 2em;
     font-weight: 600;
     color: #333333;
 }
