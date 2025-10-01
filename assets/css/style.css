@@ -687,6 +687,7 @@ nav ul a {
 }
 
 .btn-group a {
+    display: block;
     text-decoration: none;
     font-weight: 700;
     color: #333333;
@@ -1386,6 +1387,10 @@ nav ul a {
         font-size: 2em;
     }
 
+    .footer-container {
+        padding: 4.2em;
+    }
+
     .footer-container p {
         font-size: 1em;
     }
@@ -1586,39 +1591,52 @@ nav ul a {
     }
 
     /* swiper1 price-sec */
+    .price-plan-sec {
+        margin-bottom: 3.8em;
+    }
+
     .price-column {
         width: 100%;
     }
 
+    .title-group>.title {
+        width: 160%;
+    }
+
+    .title-group>.title h3 {
+        font-size: 1em;
+    }
+
     .slide1 {
         width: 100%;
+        height: 22em;
         flex-wrap: wrap;
     }
 
     .price-title h3 {
-        font-size: 1.5em;
+        font-size: 1em;
         letter-spacing: -0.08em;
     }
 
     .price-title img {
-        width: 2.5em;
+        width: 2em;
         margin-right: 0.2.6em;
     }
 
     .text-row-1 {
-        font-size: 1.875em;
+        font-size: 1.6em;
         margin-bottom: 0.5em;
     }
 
     .text-row-1 img {
-        transform: scale(110%);
+        transform: scale(100%);
     }
 
     .text-row-2,
     .text-row-3,
     .text-row-4,
     .text-row-5 {
-        font-size: 1.5em;
+        font-size: 1.1em;
         margin-bottom: 0.3em;
     }
 
@@ -1628,7 +1646,7 @@ nav ul a {
 
     .text-row-3 img,
     .text-row-5 img {
-        scale: 110%;
+        scale: 100%;
     }
 
     .text-row-5 .text-2 {
@@ -1646,14 +1664,46 @@ nav ul a {
 
     .partnership-wrap {
         width: 94%;
+        padding: 2.8em 0;
     }
 
     .partnership-title h2 {
-        font-size: 0.85em;
+        font-size: 0.6em;
+        text-align: center;
+    }
+
+    .partnership-title img {
+        width: 15%;
+        padding: 0 0.3em;
     }
 
     .box-row h3 {
         font-size: 2.5em;
+    }
+
+    .box-row {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .box-row .text-group {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .box-row .text-group p {
+        font-size: 1.4em;
+        width: 80%;
+    }
+
+    .box-row .text-group h3 {
+        font-size: 2.4em;
+    }
+
+    .partnership-img {
+        margin-right: 0;
     }
 
     /* swiper2 review-sec */
@@ -1670,7 +1720,7 @@ nav ul a {
     }
 
     .slide2 {
-        width: 50%;
+        width: 100%;
     }
 
     .banner {
@@ -1713,13 +1763,43 @@ nav ul a {
         margin-bottom: 4em;
     }
 
+    .counseling-wrap .text-group p {
+        font-size: 1.5em;
+    }
+
+    .counseling-phone {
+        margin-bottom: 0;
+    }
+
+    .counseling-wrap .btn-group {
+        width: 70%;
+        height: 5em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.8em;
+        font-size: 1.4em;
+    }
+
     /* footer */
     .footer-menu li a {
-        font-size: 2em;
+        font-size: 1.4em;
+    }
+
+    .footer-container {
+        padding: 2.8em 2.2em;
     }
 
     .footer-container p {
         font-size: 1em;
+    }
+
+    .copyright {
+        display: block;
+    }
+
+    .copyright p {
+        margin-bottom: 1.8em;
     }
 
 }
