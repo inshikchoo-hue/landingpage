@@ -681,13 +681,18 @@ nav ul a {
     gap: 0.3em;
 }
 
+.counseling-wrap .text-group {
+    margin-left: 0;
+}
+
 .btn-group {
     color: #333333;
     font-size: 1.5em;
+    display: flex;
+    gap: 0.8em;
 }
 
 .btn-group a {
-    display: block;
     text-decoration: none;
     font-weight: 700;
     color: #333333;
@@ -697,7 +702,6 @@ nav ul a {
     background-color: #fff;
     padding: 0.7em 3em;
     border-radius: 3.125em;
-    margin-right: 0.625em;
 }
 
 .btn-group .btn-2 {
@@ -814,8 +818,8 @@ nav ul a {
     .menu {
         flex-direction: column;
         position: absolute;
-        top: 28%;
-        left: 23%;
+        top: 22%;
+        left: 26%;
         transform: translate(-50%, -50%);
     }
 
@@ -825,8 +829,8 @@ nav ul a {
 
     .link-menu {
         position: absolute;
-        top: 40%;
-        left: 18%;
+        top: 30%;
+        left: 22%;
         transform: translate(-50%, 50%);
     }
 
@@ -837,9 +841,12 @@ nav ul a {
     .link-menu li {
         display: flex;
         align-items: center;
-        gap: 1.4em;
         font-size: 1.6em;
         margin-bottom: 2.2em;
+    }
+
+    .mobile-menu-text {
+        margin-left: 1em;
     }
 
     .link-menu li img {
@@ -1060,6 +1067,19 @@ nav ul a {
         width: 38%;
     }
 
+    .btn-group .btn-1 {
+        margin-right: 0;
+    }
+
+    .counseling-wrap .btn-group {
+        width: 30%;
+        height: 5em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.6em;
+        font-size: 1.8em;
+    }
 
 
     /* footer */
@@ -1132,7 +1152,7 @@ nav ul a {
     .link-menu {
         position: absolute;
         top: 26%;
-        left: 24%;
+        left: 26%;
         transform: translate(-50%, 50%);
     }
 
@@ -1143,8 +1163,11 @@ nav ul a {
     .link-menu li {
         display: flex;
         align-items: center;
-        gap: 2.4em;
         font-size: 1.6em;
+    }
+
+    .mobile-menu-text {
+        margin-left: 1.8em;
     }
 
     .link-menu li a img {
@@ -1379,7 +1402,21 @@ nav ul a {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        margin-bottom: 4em;
+        margin-bottom: 2em;
+    }
+
+    .btn-group .btn-1 {
+        margin-right: 0;
+    }
+
+    .counseling-wrap .btn-group {
+        width: 46%;
+        height: 5em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.8em;
+        font-size: 1.4em;
     }
 
     /* footer */
@@ -1448,7 +1485,7 @@ nav ul a {
     .menu {
         flex-direction: column;
         position: absolute;
-        top: 32%;
+        top: 31%;
         left: 42%;
         transform: translate(-50%, -50%);
     }
@@ -1460,7 +1497,7 @@ nav ul a {
     .link-menu {
         position: absolute;
         top: 48%;
-        left: 41%;
+        left: 37%;
         transform: translate(-50%, 50%);
     }
 
@@ -1468,14 +1505,12 @@ nav ul a {
         display: block;
     }
 
-    .link-menu>li {
-        display: flex;
-        align-items: center;
-        font-size: 1.6em;
-    }
-
     .link-menu li a img {
         width: 100%;
+    }
+
+    .mobile-menu-text {
+        margin-left: 0.4em;
     }
 
     /* kv-sec */
@@ -1684,7 +1719,6 @@ nav ul a {
     .box-row {
         display: flex;
         flex-direction: column-reverse;
-
     }
 
     .box-row .text-group {
@@ -1695,7 +1729,7 @@ nav ul a {
 
     .box-row .text-group p {
         font-size: 1.4em;
-        width: 80%;
+        width: 100%;
     }
 
     .box-row .text-group h3 {
@@ -1703,7 +1737,7 @@ nav ul a {
     }
 
     .partnership-img {
-        margin-right: 0;
+        margin-left: 3.125em;
     }
 
     /* swiper2 review-sec */
@@ -1725,19 +1759,22 @@ nav ul a {
 
     .banner {
         width: 100%;
+        padding: 0 1.2em;
+        margin-bottom: 2.5em;
     }
 
     .banner img {
-        width: 7em;
+        width: 4em;
+        display: none;
     }
 
     .banner-text {
         font-size: 0.9em;
-        padding: 0 0.2em;
+        letter-spacing: -0.2em;
     }
 
     .banner-text h3 {
-        font-size: 3.4em;
+        font-size: 3em;
         letter-spacing: -0.1em;
     }
 
@@ -1748,9 +1785,6 @@ nav ul a {
 
     .counseling-wrap {
         width: 94%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
 
     .counseling-wrap .text-group {
@@ -1760,25 +1794,36 @@ nav ul a {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        margin-bottom: 4em;
+        margin-bottom: 1.8em;
     }
 
     .counseling-wrap .text-group p {
         font-size: 1.5em;
+        width: 50%;
+        text-align: center;
+        line-height: 1.2em;
     }
 
     .counseling-phone {
         margin-bottom: 0;
     }
 
+    .counseling-phone h3 {
+        font-size: 0.9em;
+    }
+
     .counseling-wrap .btn-group {
-        width: 70%;
+        width: 50%;
         height: 5em;
         text-align: center;
         display: flex;
         flex-direction: column;
         row-gap: 0.8em;
         font-size: 1.4em;
+    }
+
+    .btn-group .btn-1 {
+        margin-right: 0;
     }
 
     /* footer */
