@@ -15,7 +15,7 @@ body {
 /* common */
 
 .container {
-    width: 100%;
+    width: 68.75em;
     margin: 0 auto;
 }
 
@@ -42,7 +42,6 @@ body {
 /* header */
 nav {
     width: 100%;
-    max-width: 68.75em;
     background-color: #fff;
     height: 5.5em;
     margin: 0 auto;
@@ -106,7 +105,6 @@ nav ul a {
 
 .visual-wrap {
     height: 100%;
-    max-width: 68.75em;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -115,14 +113,14 @@ nav ul a {
 }
 
 .visual-left {
-    margin-left: 6em;
+    padding: 3em 1em;
 }
 
 .visual-right-text {
     color: #fff;
     text-align: center;
     font-size: 1.5em;
-    margin-top: -0.8em;
+    /* margin-top: -0.8em; */
 }
 
 .visual-right .h2 {
@@ -130,7 +128,8 @@ nav ul a {
     text-align: center;
     font-weight: 600;
     font-size: 2.125em;
-    margin-top: 0.12em;
+    padding: 0.2em 0;
+    /* margin-top: 0.12em; */
 }
 
 .visual-right span {
@@ -160,13 +159,13 @@ nav ul a {
 
 .left-banner {
     width: 64.5%;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #E9E9E9;
     border-radius: 1.875em;
     column-gap: 1.250em;
+    margin-bottom: 3.75em;
 }
 
 .left-text {
@@ -203,7 +202,6 @@ nav ul a {
 
 .right-banner {
     width: 33.5%;
-    height: 19.125em;
     background-color: #FFD422;
     border-radius: 1.875em;
     position: relative;
@@ -320,6 +318,117 @@ nav ul a {
     margin-bottom: 0.7em;
 }
 
+.icon-skt {
+    display: inline-block;
+    width: 34px;
+    height: 24px;
+    margin: 0 0.2em 0 0;
+    background-image: url("../images/icon_sk.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.icon-lgu {
+    display: inline-block;
+    width: 47px;
+    height: 24px;
+    margin: 0 0.2em 0 0;
+    background-image: url("../images/icon_lgu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.icon_phone {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 0.3em 0 0;
+    background-image: url("../images/icon_phone.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.icon-lte {
+    display: inline-block;
+    width: 19px;
+    height: 18px;
+    margin: 0 0.3em 0 0;
+    background-image: url("../images/icon_lte.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.icon_mail {
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    margin: 0 0.3em 0 0;
+    background-image: url("../images/icon_mail.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.icon_cu {
+    display: inline-block;
+    width: 32px;
+    height: 21px;
+    margin: 0 0.3em 0 0;
+    background-image: url("../images/icon_cu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.icon_npay {
+    display: inline-block;
+    width: 52px;
+    height: 21px;
+    margin: 0 0.3em 0 0;
+    background-image: url("../images/icon_npay.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.icon_netfl {
+    display: inline-block;
+    width: 52px;
+    height: 21px;
+    margin: 0 0.3em 0 0;
+    background-image: url("../images/icon_netfl.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.icon_disney {
+    display: inline-block;
+    width: 52px;
+    height: 21px;
+    margin: 0 0.3em 0 0;
+    background-image: url("../images/icon_disney.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.icon_promotion {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 0 0.3em 0 0;
+    background-image: url("../images/icon_promotion.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .text-row-1 {
     font-size: 1.625em;
     color: #333333;
@@ -342,6 +451,11 @@ nav ul a {
     gap: 1.25em;
 }
 
+.text-row-3 p {
+    display: flex;
+    align-items: center;
+}
+
 .text-row-3 .text-1,
 .text-2 {
     width: 100%;
@@ -361,6 +475,11 @@ nav ul a {
     margin-left: -0.25em;
 }
 
+.text-row-4 div p {
+    display: flex;
+    align-items: center;
+}
+
 .text-row-4 .text {
     width: 100%;
     display: flex;
@@ -370,48 +489,52 @@ nav ul a {
     margin-bottom: 0.25em;
 }
 
-.text-row-4 .text span {
+.text-impact {
     color: #333;
     font-weight: 500;
     margin-left: 1em;
 }
 
-.text-row-4 .text img {
-    transform: scale(90%);
-}
-
 .text-row-5 {
     width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #FFD422;
+}
+
+.text-row-5 div p {
     display: flex;
     align-items: center;
 }
 
 .text-row-5 .text-1 {
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     color: #8e8e8e;
     gap: 0.25em;
+    background-color: #0c0c0c;
+    padding: 1em 0;
 }
 
-.text-row-5 .text-1 span {
-    color: #4A4A4A;
-    font-weight: 500;
-    margin-left: 0.625em;
-}
 
 .text-row-5 .text-2 {
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: end;
+    align-items: center;
     color: #8e8e8e;
     font-size: 0.75em;
-    align-items: end;
+    background-color: #0c0c0c;
+    padding: 1em 0;
 }
 
-.text-row-5 .text-2 span {
+.text-2-impact {
     font-size: 2.2em;
     font-weight: 700;
-    color: #333333;
+    color: #ff0d0d;
     margin-right: 0.2em;
 }
 
@@ -528,7 +651,7 @@ nav ul a {
 
 .slide2 {
     width: 32%;
-    height: 30em;
+    /* height: 30em; */
     border: 0.063em solid #C7C7C7;
     border-radius: 1.25em;
     padding: 1.875em;
@@ -590,8 +713,7 @@ nav ul a {
 
 .banner {
     margin: 0 auto;
-    width: 68.75em;
-    height: 12.688em;
+    padding: 2.5em;
     background-color: #E9E9E9;
     border-radius: 1.25em;
     display: flex;
@@ -651,7 +773,7 @@ nav ul a {
 /* counseling-sec */
 .counseling-sec {
     width: 100%;
-    height: 20.438em;
+    padding: 5.5em 0;
     background-color: #1A1A1A;
 }
 
@@ -717,35 +839,28 @@ nav ul a {
 
 .footer {
     width: 100%;
-    height: 30.938em;
+    padding: 6.25em 0;
+    background-color: #fff;
 }
 
-.footer-container {
-    max-width: 68.75em;
-    margin: 0 auto;
-    padding: 6.25em;
-    color: #8E8E8E;
-}
-
-.footer-container ul {
+.footer-menu-list {
     display: flex;
     align-items: center;
     gap: 1.25em;
-    font-size: 0.75em;
     color: #D4D4D4;
     margin-bottom: 1.875em;
 }
 
 .foot-text {
-    font-size: 1.125em;
+    font-size: 0.98em;
     font-weight: 300;
-    width: 88%;
-    line-height: 1.875em;
-    margin-bottom: 1.875em;
+    line-height: 1.6em;
+    margin-bottom: 1.4em;
+    color: #8E8E8E;
 }
 
 .company-desc {
-    font-size: 1.125em;
+    font-size: 0.98em;
     font-weight: 300;
     line-height: 1.875em;
     margin-bottom: 1.875em;
@@ -763,6 +878,9 @@ nav ul a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 0.9em;
+    font-weight: 200;
+    color: #9b9b9b;
 }
 
 .link-sns {
@@ -770,16 +888,45 @@ nav ul a {
     gap: 1.875em;
 }
 
+.float-menu {
+    position: fixed;
+    right: 5%;
+    bottom: 3.6em;
+    z-index: 10;
+    /* display: none; */
+}
+
+.float-menu-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+
+.float-menu-wrap a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.float-menu-wrap a:hover img {
+    transform: translateY(-4px);
+    opacity: 0.8;
+}
+
+
+
 @media(max-width: 1024px) {
 
     * {
         box-sizing: border-box;
     }
 
+    .container {
+        width: 100%;
+    }
 
     /* header */
     nav {
-        height: 100%;
         padding: 1em 2em;
     }
 
@@ -859,17 +1006,20 @@ nav ul a {
 
     /* kv-sec */
     .kv-sec {
-        height: 100%;
         padding: 8em 8em;
     }
 
     .visual-wrap {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 4em;
     }
 
     .visual-left {
-        margin-bottom: 3.5em;
+        padding: 0;
     }
+
+    .visual-right {}
 
     .product {
         display: flex;
@@ -889,7 +1039,6 @@ nav ul a {
 
     .banner-column {
         flex-wrap: wrap;
-        row-gap: 1.875em;
     }
 
     .left-banner {
@@ -898,17 +1047,17 @@ nav ul a {
     }
 
     .left-text.box {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .left-text.text-1 {
-        font-size: 1.875em;
+        font-size: 1.58em;
         letter-spacing: -0.063em;
         margin-bottom: 0.375em;
     }
 
     .left-text h2 {
-        font-size: 3.25em;
+        font-size: 2.76em;
         letter-spacing: -0.1em;
     }
 
@@ -918,7 +1067,7 @@ nav ul a {
 
     .right-banner {
         width: 100%;
-        padding: 0.425em 6.875em;
+        padding: 0.425em 3.875em;
         position: relative;
     }
 
@@ -929,18 +1078,18 @@ nav ul a {
 
     .right-text.text-1 {
         font-size: 1.875em;
-        letter-spacing: 0.313em;
+        letter-spacing: 0.16em;
     }
 
     .right-text h2 {
-        font-size: 3em;
+        font-size: 2.76em;
         font-weight: 800;
-        letter-spacing: 0.05em;
+        letter-spacing: -0.01em;
         margin-bottom: 0.3em;
     }
 
     .right-text.desc {
-        width: 57%;
+        width: 66%;
         font-size: 1.625em;
         line-height: 1.4em;
     }
@@ -948,9 +1097,9 @@ nav ul a {
     .qr-code {
         width: 30%;
         position: absolute;
-        top: 50%;
-        right: -3%;
-        transform: translate(-50%, -50%);
+        top: 20%;
+        right: -5%;
+        transform: translate(-20%, 5%);
     }
 
     /* swiper1 price-sec */
@@ -984,10 +1133,6 @@ nav ul a {
     .text-row-5 {
         font-size: 1.22em;
         letter-spacing: -0.14em;
-    }
-
-    .coopon {
-        scale: 130%;
     }
 
     .text-row-1 {
@@ -1099,6 +1244,9 @@ nav ul a {
         font-size: 1.2em;
     }
 
+    .float-menu {
+        display: none;
+    }
 }
 
 @media(max-width: 768px) {
@@ -1320,10 +1468,6 @@ nav ul a {
     .text-row-5 {
         font-size: 1.5em;
         margin-bottom: 0.3em;
-    }
-
-    .coopon {
-        scale: 120%;
     }
 
     .text-row-3 img,
@@ -1682,10 +1826,6 @@ nav ul a {
     .text-row-5 {
         font-size: 1.1em;
         margin-bottom: 0.3em;
-    }
-
-    .coopon {
-        scale: 120%;
     }
 
     .text-row-3 img,
@@ -2100,10 +2240,6 @@ nav ul a {
     .text-row-5 {
         font-size: 1.1em;
         margin-bottom: 0.3em;
-    }
-
-    .coopon {
-        scale: 120%;
     }
 
     .text-row-3 img,
