@@ -9,7 +9,6 @@ html,
 body {
     position: relative;
     height: 100%;
-    overflow-x: hidden;
 }
 
 /* common */
@@ -309,6 +308,10 @@ nav ul a {
     margin-bottom: 14px;
 }
 
+.price-text-1 {
+    position: relative;
+}
+
 .price-title {
     display: flex;
     font-size: 1.625em;
@@ -497,10 +500,10 @@ nav ul a {
 
 .text-row-5 {
     width: 100%;
-    height: 100%;
+    padding: 0.2em 0;
     display: flex;
     align-items: center;
-    background-color: #FFD422;
+    /* background-color: #F5E045; */
 }
 
 .text-row-5 div p {
@@ -510,33 +513,33 @@ nav ul a {
 
 .text-row-5 .text-1 {
     width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     color: #8e8e8e;
     gap: 0.25em;
-    background-color: #0c0c0c;
-    padding: 1em 0;
+    /* background-color: #ff0000; */
+    padding: 0;
 }
 
 
 .text-row-5 .text-2 {
     width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     color: #8e8e8e;
     font-size: 0.75em;
-    background-color: #0c0c0c;
-    padding: 1em 0;
+    /* background-color: #0048e2; */
+    padding: 0;
+    margin: 0;
 }
 
 .text-2-impact {
     font-size: 2.2em;
     font-weight: 700;
-    color: #ff0d0d;
-    margin-right: 0.2em;
+    color: #333;
 }
+
+.price-btn {}
 
 /* partnership-sec */
 .partnership-sec {
@@ -892,8 +895,17 @@ nav ul a {
     position: fixed;
     right: 5%;
     bottom: 3.6em;
-    z-index: 10;
-    /* display: none; */
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: all 0.4s ease;
+    z-index: 100;
+}
+
+.float-menu.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 .float-menu-wrap {
@@ -912,7 +924,6 @@ nav ul a {
     transform: translateY(-4px);
     opacity: 0.8;
 }
-
 
 
 @media(max-width: 1024px) {
@@ -1110,7 +1121,7 @@ nav ul a {
 
     .slide1 {
         width: 50%;
-        height: 24em;
+        /* height: 24em; */
     }
 
     .price-title {
@@ -1120,18 +1131,14 @@ nav ul a {
     }
 
     .price-title h3 {
-        font-size: 1.2em;
-    }
-
-    .price-title img {
-        height: 100%;
+        font-size: 1em;
     }
 
     .text-row-2,
     .text-row-3,
     .text-row-4,
     .text-row-5 {
-        font-size: 1.22em;
+        font-size: 1em;
         letter-spacing: -0.14em;
     }
 

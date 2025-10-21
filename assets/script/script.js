@@ -9,7 +9,7 @@ closeBtn.addEventListener("click", function () {
   menu.classList.remove("on");
 });
 
-// var swiper1 = new Swiper(".mySwiper1", {
+// const swiper1 = new Swiper(".mySwiper1", {
 slidesPerView: "auto",
   slidesPerGroup: 2,        // 한 번에 보이는 슬라이드 수
     loop: true,             // 무한 루프
@@ -28,7 +28,7 @@ navigation: {
   },
 });
 
-var swiper2 = new Swiper(".mySwiper2", {
+const swiper2 = new Swiper(".mySwiper2", {
   slidesPerView: "auto",
   slidesPerGroup: 3,        // 한 번에 보이는 슬라이드 수
   loop: true,             // 무한 루프
@@ -81,27 +81,30 @@ $(function () {
 });
 
 // 플로팅메뉴
+document.addEventListener("DOMContentLoaded", () => {
+  const floatMenu = document.querySelector(".float-menu");
+  if (!floatMenu) return; // 안전장치
 
-// $(function () {
-//   const $floatMenu = $('.float-menu');
-//   const showPoint = 300; // 몇 px 이상 내려야 나타날지 설정 (조절 가능)
+  // 스크롤 시 show 클래스 추가/삭제
+  window.addEventListener("scroll", () => {
+    console.log(window.scrollY);
+    if (window.scrollY > 600) {
+      console.log("show 클래스 추가됨");
+      floatMenu.classList.add("show");
+    } else {
+      floatMenu.classList.remove("show");
+      console.log("show 클래스 추가됨");
+    }
+  });
 
+  // ▲ 맨 위로 부드럽게 이동
+  const topBtn = document.querySelector(".float-menu a[href='#top']");
+  if (topBtn) {
+    topBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      console.log("맨 위로 버튼 클릭됨");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+});
 
-//   $(window).on('scroll', function () {
-//     const scrollTop = $(this).scrollTop();
-
-
-//     if (scrollTop > showPoint) {
-//       // 300px 이상 스크롤 시 나타남
-//       if (!$floatMenu.is(':visible')) {
-//         $floatMenu.fadeIn(300);
-//       }
-//     } else {
-//       // 처음 화면 또는 상단으로 올라오면 사라짐
-//       if ($floatMenu.is(':visible')) {
-//         $floatMenu.fadeOut(300);
-//       }
-//     }
-//     $(function () { console.log("스크립트 실행됨") });
-//   });
-// });
