@@ -9,14 +9,16 @@
 
 html,
 body {
-    position: relative;
-    height: 100%;
+    /* position: relative;
+    height: 100%; */
+    line-height: 1.3em;
 }
 
 /* common */
 
 .container {
-    width: 68.75em;
+    max-width: 68.75em;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -44,7 +46,7 @@ body {
 nav {
     width: 100%;
     background-color: #fff;
-    height: 5.5em;
+    /* height: 5.5em; */
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -140,12 +142,14 @@ nav ul a {
 /* price-plan-sec */
 .price-plan-sec {
     max-width: 68.75em;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 6.25em;
 }
 
 .banner-column {
     max-width: 68.75em;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 2%;
@@ -215,7 +219,8 @@ nav ul a {
 }
 
 .right-text.box {
-    width: 7em;
+    max-width: 7em;
+    width: 100%;
     font-size: 0.938em;
     font-weight: 700;
     color: #404040;
@@ -264,7 +269,8 @@ nav ul a {
 
 
 .price-column {
-    width: 68.75em;
+    max-width: 68.75em;
+    width: 100%;
 }
 
 /* swiper1-pagination*/
@@ -309,7 +315,7 @@ nav ul a {
 
 .box_line {
     border: none;
-    height: 1.4px;
+    /* height: 1.4px; */
     background-color: #d8d8d8;
     margin-bottom: 14px;
 }
@@ -566,7 +572,8 @@ nav ul a {
 }
 
 .partnership-wrap {
-    width: 68.75em;
+    max-width: 68.75em;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -631,7 +638,8 @@ nav ul a {
 }
 
 .review-sec {
-    width: 68.75em;
+    max-width: 68.75em;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -683,7 +691,7 @@ nav ul a {
 
 .review-img {
     width: 100%;
-    height: 15.625em;
+    /* height: 15.625em; */
     border-radius: 0.375em;
     margin-bottom: 0.688em;
     object-fit: cover;
@@ -739,7 +747,7 @@ nav ul a {
 .underline {
     display: flex;
     width: 100%;
-    height: 0.25em;
+    /* height: 0.25em; */
     margin-top: 0.375em;
 }
 
@@ -792,8 +800,9 @@ nav ul a {
 }
 
 .counseling-wrap {
-    width: 68.75em;
-    height: 100%;
+    max-width: 68.75em;
+    width: 100%;
+    /* height: 100%; */
     margin: 0 auto;
     color: #fff;
     display: flex;
@@ -1092,7 +1101,8 @@ nav ul a {
 
     .right-text.box {
         font-size: 1.25em;
-        width: 10em;
+        max-width: 10em;
+        width: 100%;
     }
 
     .right-text.text-1 {
@@ -1124,7 +1134,7 @@ nav ul a {
     /* swiper1 price-sec */
     .price-column {
         width: 100%;
-        height: 26em;
+        /* height: 26em; */
     }
 
     .slide1 {
@@ -1238,7 +1248,7 @@ nav ul a {
 
     .counseling-wrap .btn-group {
         width: 40%;
-        height: 5em;
+        /* height: 5em; */
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -1366,7 +1376,8 @@ nav ul a {
 
     .right-text.box {
         font-size: 1.25em;
-        width: 8em;
+        max-width: 8em;
+        width: 100%;
     }
 
     .right-text.text-1 {
@@ -1411,7 +1422,8 @@ nav ul a {
     }
 
     .price-title img {
-        width: 2.5em;
+        max-width: 2.5em;
+        width: 100%;
         margin-right: 0.26em;
     }
 
@@ -1485,7 +1497,8 @@ nav ul a {
     }
 
     .banner img {
-        width: 6em;
+        max-width: 6em;
+        width: 100%;
     }
 
     .banner-text {
@@ -1501,7 +1514,7 @@ nav ul a {
     /* counseling-sec */
     .counseling-sec {
         width: 100%;
-        height: 24em;
+        /* height: 24em; */
     }
 
     .counseling-wrap {
@@ -1527,7 +1540,7 @@ nav ul a {
 
     .counseling-wrap .btn-group {
         width: 60%;
-        height: 5em;
+        /* height: 5em; */
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -1550,13 +1563,13 @@ nav ul a {
 
 }
 
-@media(max-width: 480px) {
+@media(max-width: 768px) {
 
     /* header */
 
     nav {
         padding: 0;
-        height: 3.4em;
+        /* height: 3.4em; */
     }
 
     .hamburger-btn {
@@ -1717,7 +1730,8 @@ nav ul a {
     }
 
     .qr-code {
-        width: 12em;
+        max-width: 12em;
+        width: 100%;
         position: absolute;
         top: 24%;
         left: 50%;
@@ -1743,7 +1757,7 @@ nav ul a {
 
     .slide1 {
         width: 100%;
-        height: 22em;
+        /* height: 22em; */
         flex-wrap: wrap;
     }
 
@@ -1753,7 +1767,8 @@ nav ul a {
     }
 
     .price-title img {
-        width: 2em;
+        max-width: 2em;
+        width: 100%;
         margin-right: 0.26em;
     }
 
@@ -1859,7 +1874,8 @@ nav ul a {
     }
 
     .banner img {
-        width: 4em;
+        max-width: 4em;
+        width: 100%;
         display: none;
     }
 
@@ -1926,7 +1942,7 @@ nav ul a {
 }
 
 
-@media(max-width: 360px) {
+@media(max-width: 768px) {
 
     /* header */
     .logo {
@@ -2090,7 +2106,8 @@ nav ul a {
     }
 
     .qr-code {
-        width: 8em;
+        max-width: 8em;
+        width: 100%;
         position: absolute;
         top: 23%;
         left: 50%;
@@ -2120,7 +2137,8 @@ nav ul a {
     }
 
     .title-group img {
-        width: 1.2em;
+        max-width: 1.2em;
+        width: 100%;
     }
 
     .slide1 {
@@ -2165,7 +2183,7 @@ nav ul a {
 
     .partnership-wrap {
         width: 94%;
-        height: 24em;
+        /* height: 24em; */
     }
 
     .partnership-title h2 {
@@ -2242,7 +2260,8 @@ nav ul a {
     }
 
     .banner img {
-        width: 4em;
+        max-width: 4em;
+        width: 100%;
         display: none;
     }
 
@@ -2260,7 +2279,7 @@ nav ul a {
     .counseling-sec {
         width: 100%;
         padding: 2em 0;
-        height: 18em;
+        /* height: 18em; */
     }
 
     .counseling-wrap .text-group {
@@ -2311,7 +2330,8 @@ nav ul a {
         padding: 2.8em 2.2em;
     }
 
-    .foot-text, .company-desc {
+    .foot-text,
+    .company-desc {
         font-size: 0.7em;
     }
 
