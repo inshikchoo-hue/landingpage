@@ -1,58 +1,25 @@
 @import url("./reset.css");
+@import url("./common.css");
 
 /* animation */
 
 * {
     margin: 0;
     padding: 0;
-}
-
-html,
-body {
-    /* position: relative;
-    height: 100%; */
-    line-height: 1.3em;
-}
-
-/* common */
-
-.container {
-    max-width: 68.75em;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.title-group {
-    width: 100%;
-    display: flex;
-    align-items: end;
-    margin-bottom: 1em;
-    padding: 0 0.625em;
     box-sizing: border-box;
 }
 
-.title {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    font-size: 1.6em;
-    font-weight: 700;
-    letter-spacing: -0.1em;
-    gap: 0.3em;
-    color: #333333;
-}
 
 /* header */
 nav {
     width: 100%;
     background-color: #fff;
-    /* height: 5.5em; */
+    padding: 6px 20px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
-
 }
 
 nav a {
@@ -60,7 +27,7 @@ nav a {
 }
 
 .logo {
-    transform: scale(80%);
+    /* transform: scale(80%); */
 }
 
 .gnb {
@@ -77,7 +44,7 @@ nav a {
 nav ul a {
     text-decoration: none;
     color: #4A4A4A;
-    font-size: 1.375em;
+    font-size: 1.2em;
 }
 
 .link-menu ul {
@@ -131,8 +98,7 @@ nav ul a {
     text-align: center;
     font-weight: 600;
     font-size: 2.125em;
-    padding: 0.2em 0;
-    /* margin-top: 0.12em; */
+    padding: 0.4em 0;
 }
 
 .visual-right span {
@@ -189,7 +155,7 @@ nav ul a {
 
 .left-text.text-1 {
     font-size: 1.688em;
-    margin-bottom: 0.125em;
+    margin-bottom: 0.7em;
     letter-spacing: -0.063em;
     color: #333333;
 }
@@ -219,15 +185,15 @@ nav ul a {
 }
 
 .right-text.box {
-    max-width: 7em;
+    max-width: 8em;
     width: 100%;
     font-size: 0.938em;
     font-weight: 700;
     color: #404040;
     border-radius: 1.875em;
     text-align: center;
-    padding: 0.375em 0.125em;
-    letter-spacing: -0.1em;
+    padding: 0.375em 0.4em;
+    /* letter-spacing: -0.1em; */
     background-color: #fff;
     margin-bottom: 0.6em;
 }
@@ -948,18 +914,11 @@ nav ul a {
 
 @media(max-width: 1024px) {
 
-    * {
-        box-sizing: border-box;
-    }
-
     .container {
         width: 100%;
     }
 
     /* header */
-    nav {
-        padding: 1em 2em;
-    }
 
     .hamburger-btn {
         display: block;
@@ -1016,20 +975,13 @@ nav ul a {
         display: block;
     }
 
-    .link-menu li {
+    .link-icon {
         display: flex;
         align-items: center;
-        font-size: 2em;
-        margin-bottom: 2.4em;
+        gap: 0.5em;
+        margin-bottom: 1em;
     }
 
-    .mobile-menu-text {
-        margin-left: 1em;
-    }
-
-    .link-menu li img {
-        width: 150%;
-    }
 
 
     /* kv-sec */
@@ -1090,7 +1042,7 @@ nav ul a {
     }
 
     .truck {
-        margin-left: 1.25em;
+        /* margin-left: 1.25em; */
     }
 
     .right-banner {
@@ -1278,42 +1230,28 @@ nav ul a {
 
 @media(max-width: 768px) {
 
-    * {
-        /* box-sizing: border-box; */
-    }
-
-
     /* header */
-    nav {
-        padding: 1em 2em;
-    }
-
     .hamburger-btn {
         display: block;
     }
 
     .close-btn {
+        transform: scale(80%);
         top: 2em;
         left: 2.2em;
     }
 
     .menu {
-        top: 7.5em;
-        left: 6em;
-    }
-
-    .menu a {
-        font-size: 2.25em;
-    }
-
-    .link-icon {
-        /* transform: scale(70%); */
+        top: 10em;
+        left: 8em;
+        font-size: 0.7em;
     }
 
     .link-menu {
-        position: absolute;
-        top: 34em;
-        left: 5.5em;
+        top: 15em;
+        left: 3.3em;
+        font-size: 1.6em;
+        font-weight: 600;
     }
 
     .link-menu ul {
@@ -1321,9 +1259,9 @@ nav ul a {
     }
 
     .link-menu li {
-        display: flex;
+        /* display: flex;
         align-items: center;
-        font-size: 1.6em;
+        font-size: 1.6em; */
     }
 
     /* kv-sec */
@@ -1338,12 +1276,12 @@ nav ul a {
     }
 
     .left-banner {
-        width: 100%;
-        padding: 3em 3em;
+        /* width: 100%;
+        padding: 3em 3em; */
     }
 
     .left-text {
-        width: 100%;
+        /* width: 100%; */
     }
 
     .left-text.box {
@@ -1354,18 +1292,18 @@ nav ul a {
     }
 
     .left-text.text-1 {
-        font-size: 1.88em;
+        font-size: 1.8em;
         letter-spacing: -0.08em;
         margin-bottom: 0.2em;
     }
 
     .left-text h2 {
         font-size: 3.2em;
-        letter-spacing: -0.1em;
+        letter-spacing: 0.1em;
     }
 
     .truck {
-        width: 30%;
+        /* width: 30%; */
     }
 
     .right-banner {
@@ -1567,11 +1505,6 @@ nav ul a {
 
     /* header */
 
-    nav {
-        padding: 0;
-        /* height: 3.4em; */
-    }
-
     .hamburger-btn {
         display: block;
     }
@@ -1582,50 +1515,38 @@ nav ul a {
     }
 
     nav img {
-        transform: scale(50%);
+        /* transform: scale(50%); */
     }
 
     .logo {
         display: block;
-        width: 50%;
-        padding: 0;
     }
 
-    .menu {
-        top: 6em;
-        left: 5em;
-        gap: 3em;
-    }
-
-    .menu a {
-        font-size: 1.4em;
-    }
-
-    .link-menu {
+    /* .link-menu {
         top: 23em;
         left: 3.6em;
     }
 
     .link-menu ul {
         display: block;
-    }
+    } */
 
-    .link-menu li {
+    /* .link-menu li {
         display: flex;
         align-items: center;
         width: 100%;
         font-size: 1em;
         margin-bottom: 1.2em;
-    }
+    } */
 
 
     .mobile-menu-text {
-        margin-left: 0.5em;
+        /* margin-left: 0.5em; */
     }
 
     /* kv-sec */
     .kv-sec {
-        padding: 3.6em 3em;
+        padding: 6em 3em;
     }
 
     .visual-wrap {
@@ -1641,11 +1562,12 @@ nav ul a {
     }
 
     .visual-right-text P {
-        font-size: 0.7em;
+        font-size: 1em;
     }
 
     .visual-right .h2 {
-        font-size: 1.2em;
+        font-size: 1.8em;
+        padding: 0.5em;
     }
 
     /* price-plan-sec */
@@ -1662,13 +1584,11 @@ nav ul a {
         display: flex;
         justify-content: center;
         flex-direction: column-reverse;
-        padding: 3em 3em;
-        margin-bottom: 0;
+        padding: 1em 5em;
     }
 
     .truck {
-        transform: scale(150%);
-        margin-bottom: 20px;
+        transform: scale(70%);
     }
 
     .banner-column img {
@@ -1946,8 +1866,7 @@ nav ul a {
 
     /* header */
     .logo {
-        transform: scale(60%);
-        margin-left: -1.4em;
+        transform: scale(80%);
     }
 
     .hamburger-btn {
@@ -1960,43 +1879,37 @@ nav ul a {
     }
 
     .menu {
-        top: 4em;
+        /* top: 5em;
         left: 3.2em;
-        gap: 1.8em;
+        gap: 1.8em; */
     }
 
     .menu a {
-        font-size: 1.1em;
+        /* font-size: 1.1em; */
     }
 
     .link-menu {
-        top: 15em;
-        left: 2.6em;
+        /* top: 17em;
+        left: 2.6em; */
     }
 
 
     .link-menu li {
-        display: flex;
+        /* display: flex;
         align-items: center;
         width: 100%;
         font-size: 0.8em;
-        margin-bottom: 1.2em;
+        margin-bottom: 1.2em; */
     }
 
     .link-menu li img {
-        width: 80%;
-    }
-
-    .mobile-menu-text {
-        display: flex;
-        align-items: center;
-        margin-left: -0.5em;
+        /* width: 80%; */
     }
 
     /* kv-sec */
     .kv-sec {
-        padding: 3.6em 3em;
-        margin-bottom: 1.5em;
+        /* padding: 3.6em 3em;
+        margin-bottom: 1.5em; */
     }
 
     .visual-wrap {
@@ -2011,13 +1924,13 @@ nav ul a {
         margin-bottom: 0;
     }
 
-    .visual-right-text P {
+    /* .visual-right-text P {
         font-size: 0.5em;
     }
 
     .visual-right .h2 {
         font-size: 1em;
-    }
+    } */
 
     /* price-plan-sec */
     .price-plan-sec {
@@ -2030,43 +1943,43 @@ nav ul a {
     }
 
     .left-banner {
-        display: flex;
+        /* display: flex;
         justify-content: center;
         flex-direction: column-reverse;
         padding: 1.8em 4.3em;
-        margin-bottom: 0;
+        margin-bottom: 0; */
     }
 
-    .truck {
+    /* .truck {
         transform: scale(120%);
         margin-bottom: 0.7em;
-    }
+    } */
 
     .banner-column img {
-        width: 100%;
+        /* width: 100%; */
         /* height: 100%; */
     }
 
     .left-text {
-        width: 100%;
+        /* width: 100%; */
     }
 
     .left-text.box {
-        font-size: 0.75em;
+        /* font-size: 0.75em;
         letter-spacing: -0.06em;
         padding: 0.3em 0.3em;
-        margin-bottom: 0.4em;
+        margin-bottom: 0.4em; */
     }
 
     .left-text.text-1 {
-        font-size: 0.92em;
+        /* font-size: 0.92em;
         letter-spacing: -0.06em;
-        margin-bottom: 0.2em;
+        margin-bottom: 0.2em; */
     }
 
     .left-text h2 {
-        font-size: 1.6em;
-        letter-spacing: -0.1em;
+        /* font-size: 1.6em;
+        letter-spacing: -0.1em; */
     }
 
     .right-banner {

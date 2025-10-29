@@ -80,7 +80,7 @@
     </script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -95,7 +95,7 @@
                     </a>
                 </h1>
                 <div class="gnb" id="top">
-                    <ul class="menu">
+                    <ul class="menu" style="font-weight: 600;">
                         <li>
                             <a href="#plan" data-offset="150">휴대폰 성지 시세표</a>
                         </li>
@@ -138,10 +138,10 @@
     <!-- kv-sec -->
     <section class="kv-sec">
         <div class="visual-wrap">
-            <div class="visual-left">
+            <div class="visual-left" data-aos="zoom-in-up">
                 <img src="./assets/images/main_typo.png" alt="최대혜택">
             </div>
-            <div class="visual-right">
+            <div class="visual-right" data-aos="flip-right">
                 <div class="product">
                     <img src="./assets/images/product_group.png" alt="가전">
                 </div>
@@ -180,7 +180,7 @@
                     </div>
                 </div>
             </div>
-            <div class="price-column wow animate__animated animate__fadeInUp" id="price">
+            <div class="price-column" id="price">
                 <div class="title-group">
                     <div class="title">
                         <img src="./assets/images/bullet_01.png" alt="블릿">
@@ -190,7 +190,7 @@
                 </div>
                 <!-- swiper1 price-sec-->
                 <div class="slide-container">
-                    <div class="slide-sec">
+                    <div class="slide-sec" data-aos="fade-up">
                         <div class="swiper mySwiper1">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide slide1">
@@ -377,14 +377,14 @@
                     <h2>가입만 하면 따라오는 <span>제휴 혜택!</span></h2>
                     <img src="./assets/images/icon_confetti.png" alt="폭죽2">
                 </div>
-                <div class="box-row wow animate__animated animate__fadeInLeft">
+                <div class="box-row" data-aos="fade-right">
                     <div class="text-group">
                         <p>신한카드만 있으면 누구나 받을 수 있는 혜택을 받으세요.</p>
                         <h3>12개월 간 특별한 할인</h3>
                     </div>
                     <img class="partnership-img" src="./assets/images/img_credit.png" alt="신용카드">
                 </div>
-                <div class="box-row wow animate__animated animate__fadeInRight">
+                <div class="box-row" data-aos="fade-left">
                     <div class="text-group">
                         <p>CGV 전용 요금제 가입한 모든 고객께 드리는 혜택입니다.</p>
                         <h3>CGV 영화쿠폰 1+1 증정 !</h3>
@@ -395,7 +395,7 @@
         </div>
     </section>
     <div class="container">
-        <div class="review-sec wow animate__animated animate__fadeInUp" id="review">
+        <div class="review-sec" id="review">
             <div class="title-group">
                 <div class="title">
                     <img src="./assets/images/bullet_01.png" alt="블릿">
@@ -405,7 +405,7 @@
             </div>
             <!-- swiper2 review-sec -->
             <div class="review-column-3"> <!--slide-container-->
-                <div class="review-box"> <!--slide sec-->
+                <div class="review-box" data-aos="fade-up"> <!--slide sec-->
                     <div class="swiper mySwiper2">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide slide2"> <!--slide-->
@@ -665,7 +665,7 @@
                 </div>
 
             </div>
-            <div class="banner">
+            <div class="banner" data-aos="flip-up">
                 <img src="./assets/images/img_shield.png" alt="쉴드">
                 <div class="banner-text">
                     <p>공시지원금은 <span>6개월</span> / 선택약정은 <span>4개월 후</span></p>
@@ -691,8 +691,8 @@
                     </div>
                 </div>
                 <div class="btn-group">
-                    <a href="#" class="btn-1 wow animate__animated animate__backInLeft">1:1 문의</a>
-                    <a href="#" class="btn-2 wow animate__animated animate__backInRight">카톡 상담</a>
+                    <a href="#" class="btn-1" data-aos="fade-right">1:1 문의</a>
+                    <a href="#" class="btn-2" data-aos="fade-left">카톡 상담</a>
                 </div>
             </div>
         </div>
@@ -756,10 +756,10 @@
     </div>
     <script src="./assets/script/jquery-3.7.1.min.js"></script>
     <script src="./assets/script/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/script/script.js"></script>
     <script>
-        new WOW().init();
+        AOS.init();
     </script>
 </body>
 
