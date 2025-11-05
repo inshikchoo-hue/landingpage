@@ -921,6 +921,9 @@ nav ul a {
     }
 
     /* header */
+    nav {
+    padding: 0.8em 2em;
+}
 
     .hamburger-btn {
         display: block;
@@ -929,8 +932,8 @@ nav ul a {
     .close-btn {
         display: block;
         position: absolute;
-        top: 3.2em;
-        left: 2.8em;
+        top: 2em;
+        left: 2em;
     }
 
     .mobile-menu-text {
@@ -939,16 +942,13 @@ nav ul a {
 
     .gnb {
         flex-direction: column;
-        width: 100%;
         position: fixed;
         top: 0;
         right: -100%;
         width: 90%;
         height: 100vh;
         background-color: #fff;
-        border: 0.063em solid black;
         transition: right 0.3s ease;
-        padding: 10.125em 1.25em;
         z-index: 100;
     }
 
@@ -969,7 +969,7 @@ nav ul a {
 
     .link-menu {
         position: absolute;
-        top: 39em;
+        top: 31em;
         left: 6.6em;
     }
 
@@ -977,11 +977,20 @@ nav ul a {
         display: block;
     }
 
+    .link-menu li {
+        margin-bottom: 3em;
+    }
+
     .link-icon {
         display: flex;
         align-items: center;
-        gap: 0.5em;
+        gap: 0.8em;
         margin-bottom: 1em;
+    }
+
+    .mobile-menu-text {
+        font-size: 3em;
+        font-weight: 600;
     }
 
 
@@ -1001,16 +1010,15 @@ nav ul a {
         padding: 0;
     }
 
-    .visual-right {}
-
     .product {
         display: flex;
         justify-content: center;
         margin-bottom: 1.2em;
     }
 
-    .visual-right-text {
-        font-size: 1.8em;
+    .visual-right-text p {
+        font-size: 1.2em;
+        margin-bottom: 0.4em;
     }
 
     /* price-plan-sec */
@@ -1025,7 +1033,11 @@ nav ul a {
 
     .left-banner {
         width: 100%;
-        padding: 1.875em 3.75em;
+        padding: 1.4em 6.5em;
+    }
+
+    .left-text {
+        width: 100%;
     }
 
     .left-text.box {

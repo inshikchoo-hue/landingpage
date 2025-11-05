@@ -14,7 +14,7 @@ const swiper1 = new Swiper(".mySwiper1", {
   slidesPerGroup: 2,        // 한 번에 보이는 슬라이드 수
   loop: true,             // 무한 루프
   autoplay: {
-    delay: 3000,
+    delay: 5000,
     disableOnInteraction: false,
   },
   spaceBetween: 20,       // 슬라이드 간 간격(px)
@@ -32,10 +32,10 @@ const swiper2 = new Swiper(".mySwiper2", {
   slidesPerView: "auto",
   slidesPerGroup: 3,        // 한 번에 보이는 슬라이드 수
   loop: true,             // 무한 루프
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
   spaceBetween: 20,       // 슬라이드 간 간격(px)
   pagination: {
     el: ".swiper2-pagination",  // pagination 적용할 엘리먼트
