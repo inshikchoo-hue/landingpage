@@ -26,8 +26,8 @@ nav a {
     display: block;
 }
 
-.logo {
-    /* transform: scale(80%); */
+.title {
+    display: none;
 }
 
 .gnb {
@@ -922,8 +922,8 @@ nav ul a {
 
     /* header */
     nav {
-    padding: 0.8em 2em;
-}
+        padding: 0.8em 2em;
+    }
 
     .hamburger-btn {
         display: block;
@@ -1061,7 +1061,7 @@ nav ul a {
         letter-spacing: -0.02em;
     }
 
-    
+
     .right-banner {
         width: 100%;
         padding: 1.4em 6.5em;
@@ -1071,25 +1071,25 @@ nav ul a {
     .right-text-group {
         width: 100%;
     }
-    
+
     .right-text {
         width: 67%;
     }
-    
+
     .right-text.box {
         font-size: 1.25em;
         max-width: 10em;
         width: 100%;
         padding: 0.3em;
     }
-    
+
     .right-text.text-1 {
         width: 100%;
         font-size: 2em;
         letter-spacing: 0.46em;
         margin-bottom: 0.9em;
     }
-    
+
     .right-text h2 {
         width: 100%;
         font-size: 3.5em;
@@ -1097,13 +1097,13 @@ nav ul a {
         letter-spacing: 0.1em;
         margin-bottom: 0.4em;
     }
-    
+
     .right-text.desc {
         width: 100%;
         font-size: 1.4em;
         line-height: 1.2em;
     }
-    
+
     .qr-code {
         top: 50%;
         right: -7%;
@@ -1384,9 +1384,10 @@ nav ul a {
     }
 
     .qr-code {
-        width: 100%;
-        top: 40%;
-        left: 84%;
+        width: 80%;
+        top: 20%;
+        left: 72%;
+        transform: translateX(-50%);
     }
 
     .right-text.box {
@@ -1480,8 +1481,8 @@ nav ul a {
     }
 
     .box_line {
-    margin-bottom: 1.6em;
-}
+        margin-bottom: 1.6em;
+    }
 
 
     .text-row-5 .text-2 {
@@ -1669,4 +1670,9 @@ nav ul a {
         margin-left: -5em;
     }
 
+}
+
+html,
+body {
+    overflow-x: hidden;
 }
