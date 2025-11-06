@@ -228,10 +228,10 @@ nav ul a {
 }
 
 .qr-code {
-    /* display: block; */
+    display: block;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 80%;
+    left: 78%;
     transform: translate(-50%, -50%);
 }
 
@@ -423,10 +423,14 @@ nav ul a {
     font-weight: 600;
 }
 
-.text-row-2 {
+.text-row-2,
+.text-row-3,
+.text-row-4,
+.text-row-5 {
     font-size: 1em;
+    font-weight: 300;
     color: #8E8E8E;
-    margin-bottom: 0.75em;
+    margin-bottom: 0.7em;
 }
 
 .text-row-3 {
@@ -446,7 +450,7 @@ nav ul a {
     white-space: nowrap;
     gap: 0.375em;
     color: #8E8E8E;
-    margin-bottom: 0.875em;
+    margin-bottom: 0.7em;
 }
 
 .text-row-3 span {
@@ -592,7 +596,7 @@ nav ul a {
 }
 
 .box-row h3 {
-    font-size: 2.8em;
+    font-size: 2.6em;
     font-weight: 700;
     letter-spacing: -0.05em;
     color: #DB053B;
@@ -825,7 +829,7 @@ nav ul a {
 
 .footer {
     width: 100%;
-    padding: 4.25em 0;
+    padding: 3.25em 0;
     background-color: #fff;
 }
 
@@ -835,6 +839,14 @@ nav ul a {
     gap: 1.25em;
     color: #D4D4D4;
     margin-bottom: 1.875em;
+}
+
+.foot-menu a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #8E8E8E;
+    letter-spacing: -0.01em;
+    font-size: 1.25em;
 }
 
 .foot-text {
@@ -849,15 +861,8 @@ nav ul a {
     font-size: 0.98em;
     font-weight: 300;
     line-height: 1.875em;
-    margin-bottom: 1.875em;
-}
-
-.foot-menu a {
-    text-decoration: none;
-    font-weight: 500;
+    margin-bottom: 1em;
     color: #8E8E8E;
-    letter-spacing: -0.125em;
-    font-size: 1.25em;
 }
 
 .copyright {
@@ -916,6 +921,9 @@ nav ul a {
     }
 
     /* header */
+    nav {
+    padding: 0.8em 2em;
+}
 
     .hamburger-btn {
         display: block;
@@ -924,8 +932,8 @@ nav ul a {
     .close-btn {
         display: block;
         position: absolute;
-        top: 3.2em;
-        left: 2.8em;
+        top: 2em;
+        left: 2em;
     }
 
     .mobile-menu-text {
@@ -934,16 +942,13 @@ nav ul a {
 
     .gnb {
         flex-direction: column;
-        width: 100%;
         position: fixed;
         top: 0;
         right: -100%;
         width: 90%;
         height: 100vh;
         background-color: #fff;
-        border: 0.063em solid black;
         transition: right 0.3s ease;
-        padding: 10.125em 1.25em;
         z-index: 100;
     }
 
@@ -964,7 +969,7 @@ nav ul a {
 
     .link-menu {
         position: absolute;
-        top: 39em;
+        top: 31em;
         left: 6.6em;
     }
 
@@ -972,11 +977,20 @@ nav ul a {
         display: block;
     }
 
+    .link-menu li {
+        margin-bottom: 3em;
+    }
+
     .link-icon {
         display: flex;
         align-items: center;
-        gap: 0.5em;
+        gap: 0.8em;
         margin-bottom: 1em;
+    }
+
+    .mobile-menu-text {
+        font-size: 3em;
+        font-weight: 600;
     }
 
 
@@ -996,16 +1010,15 @@ nav ul a {
         padding: 0;
     }
 
-    .visual-right {}
-
     .product {
         display: flex;
         justify-content: center;
         margin-bottom: 1.2em;
     }
 
-    .visual-right-text {
-        font-size: 1.8em;
+    .visual-right-text p {
+        font-size: 1.2em;
+        margin-bottom: 0.4em;
     }
 
     /* price-plan-sec */
@@ -1020,7 +1033,11 @@ nav ul a {
 
     .left-banner {
         width: 100%;
-        padding: 1.875em 3.75em;
+        padding: 1.4em 6.5em;
+    }
+
+    .left-text {
+        width: 100%;
     }
 
     .left-text.box {
@@ -1103,7 +1120,7 @@ nav ul a {
     .text-row-4,
     .text-row-5 {
         font-size: 1em;
-        letter-spacing: -0.14em;
+        /* letter-spacing: -0.1em; */
     }
 
     .text-row-1 {
@@ -1152,10 +1169,6 @@ nav ul a {
     /* swiper2 review-sec */
     .review-sec {
         width: 94%;
-    }
-
-    .title-group {
-        padding: 0 10px;
     }
 
     .swiper-wrapper {
@@ -1225,6 +1238,10 @@ nav ul a {
 @media(max-width: 768px) {
 
     /* header */
+    nav {
+        padding: 0.4em 1em;
+    }
+
     .logo {
         display: block;
         transform: scale(80%);
@@ -1333,17 +1350,13 @@ nav ul a {
         flex-direction: column-reverse;
         padding: 14em 0 2.6em;
         position: relative;
-        /* width: 100%;
-        padding: 0.425em 1em;
-        margin-bottom: 1.9em; */
     }
 
     .qr-code {
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 38%;
+        left: 46%;
         transform: translate(-50%, -50%);
-        padding: 2em;
     }
 
     .right-text.box {
@@ -1387,15 +1400,11 @@ nav ul a {
     }
 
     .title-group {
-        margin-bottom: 0.6em;
-    }
-
-    .title-group>.title {
-        width: 160%;
+        margin-bottom: 1.2em;
     }
 
     .title-group>.title h3 {
-        font-size: 1em;
+        font-size: 1.3em;
     }
 
     .title-group img {
@@ -1407,11 +1416,11 @@ nav ul a {
         width: 100%;
         height: auto;
         flex-wrap: wrap;
-        padding: 1.2em 1.6em;
+        padding: 2.8em 2.6em 1.4em;
     }
 
     .price-title h3 {
-        font-size: 1.5em;
+        font-size: 1.4em;
         letter-spacing: -0.08em;
     }
 
@@ -1434,9 +1443,14 @@ nav ul a {
     .text-row-3,
     .text-row-4,
     .text-row-5 {
-        font-size: 1.5em;
-        margin-bottom: 0.3em;
+        font-size: 1.4em;
+        font-weight: 300;
+        margin-bottom: 0.5em;
     }
+
+    .box_line {
+    margin-bottom: 1.6em;
+}
 
 
     .text-row-5 .text-2 {
@@ -1459,39 +1473,32 @@ nav ul a {
     }
 
     .partnership-title h2 {
-        font-size: 0.6em;
-        letter-spacing: -0.1em;
-        text-align: center;
+        font-size: 0.8em;
     }
 
     .partnership-title img {
-        width: 15%;
+        width: 12%;
         padding: 0 0.3em;
-    }
-
-    .box-row h3 {
-        font-size: 2.5em;
     }
 
     .box-row {
         display: flex;
         flex-direction: column-reverse;
-        padding: 1.6em 0;
+        padding: 1em 0 2.4em;
     }
 
     .box-row .text-group {
         width: 100%;
-        margin: 0;
         text-align: center;
     }
 
     .box-row .text-group p {
-        font-size: 1em;
-        width: 100%;
+        font-size: 1.2em;
+        margin-bottom: 0.6em;
     }
 
     .box-row .text-group h3 {
-        font-size: 1.6em;
+        font-size: 2.2em;
     }
 
     /* swiper2 review-sec */
@@ -1499,8 +1506,8 @@ nav ul a {
         width: 94%;
     }
 
-    .title-group {
-        padding: 0 10px;
+    .review-img {
+        aspect-ratio: 1/1;
     }
 
     .swiper-wrapper {
@@ -1513,7 +1520,7 @@ nav ul a {
 
     .banner {
         width: 100%;
-        padding: 2.4rem 0;
+        padding: 2.4em 0;
         margin-bottom: 2.5em;
     }
 
@@ -1546,44 +1553,27 @@ nav ul a {
         justify-content: center;
     }
 
-    .counseling .text-group {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        margin-bottom: 2em;
-    }
-
     .counseling-wrap .text-group p {
-        font-size: 1.5em;
-        width: 50%;
+        font-size: 2em;
+        width: 90%;
         text-align: center;
         line-height: 1.2em;
     }
 
-    .btn-group .btn-1 {
-        margin-right: 0;
-    }
-
     .counseling-wrap .btn-group {
         width: 60%;
-        /* height: 5em; */
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        row-gap: 0.8em;
-        font-size: 1.4em;
+        row-gap: 0.6em;
+        font-size: 1.6em;
     }
 
     .counseling-phone {
-        margin-bottom: 0;
-        gap: 0;
+        margin-bottom: 0.4em;
+        gap: 0.2em;
     }
 
     .counseling-phone h3 {
-        font-size: 0.9em;
+        font-size: 0.8em;
+        font-weight: 700;
     }
 
     .btn-group a {
@@ -1613,9 +1603,14 @@ nav ul a {
         padding: 4.2em;
     }
 
+
+    .foot-text {
+        margin-bottom: 1em;
+    }
+
     .foot-text,
     .company-desc {
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
 
     .footer-container p {
@@ -1624,7 +1619,7 @@ nav ul a {
 
     .copyright {
         display: block;
-        font-size: 0.5em;
+        font-size: 0.9em;
     }
 
     .copyright p {
@@ -1633,7 +1628,7 @@ nav ul a {
 
     .link-sns {
         transform: scale(80%);
-        margin-left: -4.5em;
+        margin-left: -5em;
     }
 
 }
