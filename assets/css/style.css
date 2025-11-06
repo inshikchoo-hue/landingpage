@@ -149,11 +149,11 @@ nav ul a {
 .left-text.box {
     font-size: 1.25em;
     color: #404040;
-    border: 0.1em solid #888888;
-    padding: 0.375em;
+    border: 0.08em solid #888888;
     letter-spacing: -0.063em;
     background-color: #fff;
-    margin-bottom: 0.8em;
+    padding: 0.2em;
+    margin-bottom: 0.6em;
 }
 
 .left-text.text-1 {
@@ -1034,75 +1034,88 @@ nav ul a {
     .left-banner {
         width: 100%;
         padding: 1.4em 6.5em;
+        margin-bottom: 2em;
     }
 
     .left-text {
-        width: 100%;
+        width: 60%;
     }
 
     .left-text.box {
-        font-size: 1.3em;
+        width: 100%;
+        font-size: 1.4em;
+        letter-spacing: 0.06em;
+        padding: 0.3em;
+        margin-bottom: 0.7em;
     }
 
     .left-text.text-1 {
-        font-size: 1.58em;
-        letter-spacing: -0.063em;
-        margin-bottom: 0.375em;
+        width: 100%;
+        font-size: 2em;
+        letter-spacing: 0.01em;
+        margin-bottom: 0.8em;
     }
 
     .left-text h2 {
-        font-size: 2.76em;
-        letter-spacing: -0.1em;
+        font-size: 3.5em;
+        letter-spacing: -0.02em;
     }
 
-    .qr-code {
-        /* width: 30%;
-        position: absolute;
-        top: 20%;
-        right: 50%;
-        transform: translate(-50%, -50%); */
-    }
-
+    
     .right-banner {
         width: 100%;
-        padding: 0.425em 3.875em;
-        position: relative;
+        padding: 1.4em 6.5em;
+        margin-bottom: 1em;
     }
 
+    .right-text-group {
+        width: 100%;
+    }
+    
+    .right-text {
+        width: 67%;
+    }
+    
     .right-text.box {
         font-size: 1.25em;
         max-width: 10em;
         width: 100%;
+        padding: 0.3em;
     }
-
+    
     .right-text.text-1 {
-        font-size: 1.875em;
-        letter-spacing: 0.16em;
+        width: 100%;
+        font-size: 2em;
+        letter-spacing: 0.46em;
+        margin-bottom: 0.9em;
     }
-
+    
     .right-text h2 {
-        font-size: 2.76em;
+        width: 100%;
+        font-size: 3.5em;
         font-weight: 800;
-        letter-spacing: -0.01em;
-        margin-bottom: 0.3em;
+        letter-spacing: 0.1em;
+        margin-bottom: 0.4em;
     }
-
+    
     .right-text.desc {
-        width: 66%;
-        font-size: 1.625em;
-        line-height: 1.4em;
+        width: 100%;
+        font-size: 1.4em;
+        line-height: 1.2em;
     }
-
+    
+    .qr-code {
+        top: 50%;
+        right: -7%;
+    }
 
     /* swiper1 price-sec */
     .price-column {
         width: 100%;
-        /* height: 26em; */
     }
 
     .slide1 {
         width: 50%;
-        /* height: 24em; */
     }
 
     .price-title {
@@ -1120,7 +1133,6 @@ nav ul a {
     .text-row-4,
     .text-row-5 {
         font-size: 1em;
-        /* letter-spacing: -0.1em; */
     }
 
     .text-row-1 {
@@ -1137,8 +1149,7 @@ nav ul a {
     }
 
     .text-row-3 .text-1 {
-        width: 100%;
-        /* margin-bottom: 0.1em; */
+        width: 100
     }
 
     .text-row-5 {
@@ -1151,9 +1162,12 @@ nav ul a {
     }
 
     .text-row-5 .text-2 {
-        /* justify-content: start; */
         font-size: 1em;
         margin-top: 0.5em;
+    }
+
+    .text-2-impact {
+        font-size: 1.8em;
     }
 
 
@@ -1164,6 +1178,15 @@ nav ul a {
 
     .partnership-wrap {
         width: 94%;
+    }
+
+    .text-group {
+        /* width: 60%; */
+    }
+
+    .text-group {
+        width: 100%;
+        white-space: nowrap;
     }
 
     /* swiper2 review-sec */
@@ -1181,11 +1204,25 @@ nav ul a {
 
     .banner {
         width: 100%;
-        padding: 0 40px;
+        padding: 1em 2em;
+    }
+
+    .banner img {
+        width: 10%;
     }
 
     .banner-text {
         padding: 20px;
+    }
+
+    .banner-text p {
+        font-size: 1.5em;
+        letter-spacing: 0.01em;
+        margin-bottom: 1em;
+    }
+
+    .banner-text h3 {
+        font-size: 3.5em;
     }
 
     /* counseling-sec */
@@ -1197,22 +1234,18 @@ nav ul a {
         width: 80%;
     }
 
-    .text-group {
-        width: 46%;
-    }
-
     .btn-group .btn-1 {
         margin-right: 0;
     }
 
     .counseling-wrap .btn-group {
-        width: 40%;
-        /* height: 5em; */
+        width: 35%;
         text-align: center;
         display: flex;
         flex-direction: column;
         row-gap: 0.6em;
-        font-size: 1.8em;
+        font-size: 1.5em;
+        white-space: nowrap;
     }
 
 
@@ -1329,6 +1362,8 @@ nav ul a {
         font-size: 1.2em;
         letter-spacing: -0.06em;
         padding: 0.3em 0.1em;
+        width: 80%;
+        margin: 0 auto;
         margin-bottom: 0.5em;
     }
 
@@ -1345,18 +1380,13 @@ nav ul a {
 
     .right-banner {
         height: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column-reverse;
-        padding: 14em 0 2.6em;
-        position: relative;
+        padding: 14em 6em 2.6em;
     }
 
     .qr-code {
-        position: absolute;
-        top: 38%;
-        left: 46%;
-        transform: translate(-50%, -50%);
+        width: 100%;
+        top: 40%;
+        left: 84%;
     }
 
     .right-text.box {
@@ -1368,6 +1398,7 @@ nav ul a {
     }
 
     .right-text {
+        width: 100%;
         text-align: center;
     }
 
@@ -1550,12 +1581,15 @@ nav ul a {
         width: 94%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
     }
 
-    .counseling-wrap .text-group p {
+    .counseling.text-group {
+        text-align: center;
+    }
+
+    .counseling.text-group p {
         font-size: 2em;
-        width: 90%;
+        width: 100%;
         text-align: center;
         line-height: 1.2em;
     }
@@ -1567,9 +1601,13 @@ nav ul a {
     }
 
     .counseling-phone {
+        width: 100%;
         margin-bottom: 0.4em;
         gap: 0.2em;
+        display: flex;
+        justify-content: center;
     }
+
 
     .counseling-phone h3 {
         font-size: 0.8em;
@@ -1577,7 +1615,7 @@ nav ul a {
     }
 
     .btn-group a {
-        padding: 0 20px;
+        font-size: 0.9em;
     }
 
     /* footer */
